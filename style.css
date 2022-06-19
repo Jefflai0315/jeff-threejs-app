@@ -1,0 +1,101 @@
+body {
+    overflow: hidden;
+    margin: 0px;
+    background: rgba(0,0,0,0.5);
+    font-family: 'Roboto', sans-serif;
+    text-justify: auto;
+   
+}
+
+div#logo {
+    white-space: nowrap;
+    
+}
+
+img.logo {
+    width: 10%;
+    height: 10%;
+    gap: 50px;
+    margin-left: 30px;
+}
+
+/* .featuredprojectstxt { */
+    /* display: grid;
+    grid-template-columns: repeat(5,1fr [col-start] );
+    grid-template-rows: repeat(5,1fr [row-start] ) ;
+    align-items: center; */
+    /* overflow:auto; */
+/* } WIP not working */
+
+div.featuredproject {
+    grid-row: 2/5;
+    grid-column: 1/5;
+    z-index: 50;
+    position: absolute;
+    /* width: 75%;
+    height: 50%; */
+    left: 12.5%;
+    right: 12.5%;
+    top: 10%;
+    bottom: 10%;
+    border-radius: 30px;
+    padding: 1em;
+    
+    transform: translateY(0);
+    background: rgba(0, 0, 0, 0.50);
+    opacity: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: opacity 0.5s, transform 0.5s;
+    overflow:auto;-ms-overflow-style: none; /* Edge, Internet Explorer */
+    scrollbar-width: none; /* Firefox */
+    overflow:auto;
+}
+
+div.featuredproject::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+h1 {
+    color: white;
+    /* text-align: center; */
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0px;
+} /* WIP not working */
+
+img {
+    object-fit: cover;
+} 
+
+iframe{
+    width: 100%;
+    height: 100%;
+} 
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  div.featuredproject.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+
+
